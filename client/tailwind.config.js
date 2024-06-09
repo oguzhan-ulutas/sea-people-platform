@@ -18,6 +18,12 @@ module.exports = {
     },
     extend: {
       colors: {
+        "light-blue":"rgb(32, 122, 233)",
+        "prussian-blue":"rgb(1, 36, 88)",
+        "cultured":"rgb(246, 248, 240)",
+        "baby-pink":"rgb(235, 194, 190",
+        "persimmon-orange":"rgb(240, 92, 4)",
+        "cadmium-red":"rgb(230, 1, 29)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

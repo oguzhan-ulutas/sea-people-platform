@@ -1,11 +1,13 @@
-import "./App.css";
-import { Button } from "./components/ui/button";
+import { useState } from "react";
+import { GlobalContext } from "./GlobalContext";
+import Router from "./Router";
 
 function App() {
+  const [count, setCount] = useState<number>(0);
   return (
-    <>
-      <Button>Click</Button>
-    </>
+    <GlobalContext.Provider value={{ count, setCount }}>
+      <Router />
+    </GlobalContext.Provider>
   );
 }
 

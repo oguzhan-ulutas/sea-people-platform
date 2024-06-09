@@ -1,11 +1,20 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import Layout from "./layout/Layout";
 
 const Router = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
+      element: <Layout />,
+      //   errorElement: <ErrorPage />,
+    },
+    {
+      path: "*",
+      element: <Navigate to="/" />,
       //   errorElement: <ErrorPage />,
     },
   ]);
