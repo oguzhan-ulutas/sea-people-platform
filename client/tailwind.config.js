@@ -77,6 +77,9 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        'dancing': ["Dancing Script",'Roboto', 'sans-serif'], // Add your Google Font name and fallback font
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -5,10 +5,13 @@ import MainNav from "./MainNav";
 const Header = () => {
   return (
     <div className="bg-cultured container mx-auto flex justify-between items-center">
-      <Link to="/">
-        <h1 className="py-10 text-3xl text-light-blue tracking-tight font-bold">
+      <Link to="/" className="inline-flex-row justify-center items-center">
+        <p className="py-2 text-3xl text-light-blue tracking-tight font-bold text-center">
           Deniz İnsanları
-        </h1>
+        </p>
+        <p className="mb-3 text-center font-dancing text-2xl">
+          "Denizlere sürgünlerin platformu"
+        </p>
       </Link>
       <div className="md:hidden">
         <MobileNav />
